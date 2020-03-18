@@ -1,0 +1,43 @@
+body{
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.circle{
+    width: 200px;
+    height: 200px;    
+}
+.tl{
+    background-color: pink;
+    border-radius: 100% 0px 0px 0px;
+    animation-duration: 1s;
+}
+.tr{
+    background-color: red;
+    border-radius: 0px 100% 0px 0px;
+    animation-duration: 1s;
+}
+.bl{
+    background-color: yellow;
+    border-radius: 0px 0px 0px 100%;
+    animation-duration: 1s;
+}
+.br{
+    background-color: green;
+    border-radius: 0px 0px 100%  0px;
+    animation-duration: 1s;
+}
+.blink {
+  animation:blink 1s linear infinite;
+}
+@keyframes blink {
+    to {background-color:blueviolet;}
+  }

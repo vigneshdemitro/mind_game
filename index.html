@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="startlevel()">
+    <div>
+        <h1>Mind Game</h1>
+    </div>
+    <div class="container">
+        <div class="circle tl" id="1" onclick="check(this.id)"></div>
+        <div class="circle tr" id="2" onclick="check(this.id)"></div>
+        <div class="circle bl" id="3" onclick="check(this.id)"></div>
+        <div class="circle br" id="4" onclick="check(this.id)"></div>
+    </div>
+    <div id="btmdiv">
+        <h2 id="lvl"></h2>
+    </div>
+</body>
+</html>
